@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Page</title>
+</head>
+<body>
+ <!-- Banner Logo -->
+<center>
+    <img src="logo.png" alt="Banner Logo" width="50%" height="230">
+</center>
+<br>
+
+
+    <!-- Navbar using a Table -->
+    <table border="1" width="100%" bgcolor="#F08080	">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="study.html">Study</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td><a href="service.html">Service</a></td>
+            <td><a href="contact.html">Contact</a></td>
+        </tr>
+    </table>
+	<br>
+	<br>
+
+    <!-- Dropdown for Choosing Group -->
+    <label for="group">Choose Group:</label>
+    <select id="group" onchange="location = this.value;">
+        <option value="science.html">Science</option>
+        <option value="business.html">Business Studies</option>
+        <option value="arts.html">Arts</option>
+    </select>
+</body>
+</html>

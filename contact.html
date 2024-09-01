@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+ <!-- Banner Logo -->
+<center>
+    <img src="logo.png" alt="Banner Logo" width="50%" height="230">
+</center>
+<br>
+
+
+    <!-- Navbar -->
+    <table border="1" width="100%" bgcolor="#F08080	">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="study.html">Study</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td><a href="service.html">Service</a></td>
+            <td><a href="contact.html">Contact</a></td>
+        </tr>
+    </table>
+	<br>
+
+    <!-- Contact Form -->
+    <fieldset>
+        <legend>Contact Us</legend>
+        <form action="submit_form.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="firstName">First Name:</label></td>
+                    <td><input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last Name:</label></td>
+                    <td><input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" placeholder="Enter your age"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="fileUpload">Choose a file:</label></td>
+                    <td><input type="file" id="fileUpload" name="fileUpload"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td>
+                        <input type="checkbox" id="student" name="status" value="student">
+                        <label for="student">Student</label>
+                        <input type="checkbox" id="teacher" name="status" value="teacher">
+                        <label for="teacher">Teacher</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="color">Favorite Color:</label></td>
+                    <td><input type="color" id="color" name="color"></td>
+                </tr>
+                <tr>
+                    <td><label for="range">Experience (0-10):</label></td>
+                    <td><input type="range" id="range" name="range" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="about">About You:</label></td>
+                    <td><textarea id="about" name="about" rows="4" cols="20" placeholder="Tell us about yourself"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="religion">Religion:</label></td>
+                    <td>
+                        <select id="religion" name="religion">
+                            <option value="hindu">Hindu</option>
+                            <option value="muslim">Muslim</option>
+                            <option value="christian">Christian</option>
+                            <option value="buddhist">Buddhist</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <br>
+    <br>
+</body>
+</html>
